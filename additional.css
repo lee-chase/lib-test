@@ -171,7 +171,9 @@ body {
 
 div#wrapper {
   min-width: 320px;
+}
 
+@media screen and (max-width: 500px) {
   @media screen and (max-width: 500px) {
     width: 100%;
   }
