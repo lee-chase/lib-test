@@ -109,3 +109,45 @@ background: hsla(35,100%,50%,1);
 #page-content{
     overflow-wrap: break-word;
 }
+
+/* target min mobile size of 320px */
+
+body {
+  min-width: 320px;
+}
+
+#banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-logo {
+  min-width: 120px;
+}
+
+.header-image {
+  min-width: 80%;
+  margin: 10px 0;
+}
+
+.header-right {
+  display: none;
+}
+
+#email-bar .container {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#email-bar .container .contnet {
+  display: none;
+}
+
+div#wrapper {
+  min-width: 320px;
+}
+
+.home-hero {
+  display: flex;
+}
