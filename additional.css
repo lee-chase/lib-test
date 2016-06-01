@@ -144,8 +144,37 @@ body {
   display: none;
 }
 
+#email-bar .container #search-form {
+  float: none;
+  position: static;
+  right: 0;
+  margin: 0 auto;
+}
+
+#email-bar .container #search-form div {
+  display: flex;
+  justify-content: flex-right;
+}
+
+#email-bar .container input {
+  height: 26px;
+  margin: 0 20px 0 0;
+  max-width: 75%;
+  float: none;
+  margin: 0 20px 0 0;
+}
+
+#email-bar .container button {
+  vertical-align: bottom;
+  float: none;
+}
+
 div#wrapper {
   min-width: 320px;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 }
 
 .home-hero {
