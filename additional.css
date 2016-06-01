@@ -173,6 +173,12 @@ div#wrapper {
   min-width: 320px;
 }
 
+@media screen and (max-width: 500px) {
+  div#wrapper {
+    width: 100%;
+  }
+}
+
 @media screen and (max-device-width: 500px) {
   div#wrapper {
     width: 100%;
