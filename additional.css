@@ -1,481 +1,111 @@
-/*Rugby Lib Dem Additional CSS - V1.7.4 (26/04/2015)*/
-
-/*-----Page-----*/
-
-body
+*
 {
-        text-align:center;
+	box-sizing: border-box;
 }
 
-#wrapper
-{
-        width: 940px;
-        margin: 0 auto 5px;
-	padding: 0px 0px 0px 0px;
-	box-shadow: 2px 2px 7px 2px #bbb;
-	border-bottom-right-radius:8px;
-	border-bottom-left-radius:8px;
-        text-align:left;
+a {
+    color: hsla(30,100%,50%,1);
+font-weight: bold;
 }
 
-#wrapper > .container
-{
-	margin-top: 0px;
+a:hover{
+text-decoration: none;
 }
 
-
-/*-----Page Header-----*/
-
-#header
-{
-	padding: 0px;
-	margin: 0;
+.header-logo{
+width:15%;
+float:left;
 }
 
-#header a
+.header-image
 {
-	text-decoration:none;
-	color: #ffffff;
+width:70%;
+float:left;
 }
 
-#header a:hover
-{
-	color: #ffffff;
-	text-decoration:underline;
+#banner{
+    overflow: auto;
 }
 
-#header #banner
+#banner .header-image img
 {
-	background: #00a4b5;
-	min-height: 60px;
-	padding: 0px 0px 0px 0px;
+   border-radius: 90%/100%;
+    border-top: 5px solid  hsla(45,100%,50%,1);
+    border-bottom: 5px solid  hsla(35,100%,50%,1);
+    width: 70%;
 }
 
-
-/*-----Email Bar-----*/
-
-#email-bar
+.header-right
 {
-
-	border: 0px solid #fff;
-	margin-top:2px;
-	position: relative;
+width:15px;
+float:left;
+}
+.menu
+{
+background:white;
 }
 
-/*Email bar banner*/
-#email-bar .container .content
-{
-	padding: 0 0 0 0;
-	margin-left: 3px;
-	width: 360px;
-	background: url(/en/image/5lLBPG/360/40/stronger-economy-fairer-society-15.png) no-repeat
+.menu ul li{
+padding:0px;
+border:0px;
 }
 
-/*Hide email address*/
-#email-bar .container #search-form a
-{
-	display:none;
-}
-
-#email-bar form
-{
-	right: 3px;
+.menu ul li:hover{
+    background: white;
 }
 
 
-/*-----Left Navigation Bar-----*/
-
-.column-left
-{
-	float: left;
-	width: 15%;
+.menu ul li a {
+display:block;
+padding: 10px 5px;
+    text-align: center;
+    border-radius: 90%/100%;
+    background: hsla(45,100%,50%,1);
+    border-bottom: 2px solid hsla(45,100%,50%,1);
+box-shadow: inset 0px -5px 15px 0px hsla(55,100%,70%,1);
+    margin: 5px;
 }
 
-.column-left .menu
+.menu > ul > li a:hover
 {
-	margin: 15px 10px 15px 2px;
+background: hsla(35,100%,50%,1);
+    box-shadow: inset 0px -5px 15px 0px hsla(45,100%,70%,1);
 }
 
-.column-left .menu ul
-{
-	background: #e0e0e0;
-  	padding-left: 0px;
+.sidebar-title {
+    background: hsla(35,100%,50%,1);
+    text-align: center;
 }
 
-.column-left .menu ul li
-{
-	margin: 1px 0;
+.sidebar_article_list {
+    background:  hsla(40,100%,70%,1)
 }
 
-.column-left .menu ul li a
-{
-	background: #ffffff;
-	color: #00a4b5;
-	font-weight:bold;
-	font-size: 0.85em;
-	padding: 5px 2px;
+.sidebar_article_item a {
+    background: hsla(40,100%,50%,1);
+    font-weight: bold;
 }
 
-.column-left .menu ul li a:hover
-{
-	background: #ffffff;
-	color: #006b79;
-	text-decoration: none;
+.sidebar_article_item a:hover {
+    background: hsla(35,100%,50%,1);
 }
 
-
-/*-----Main Content-----*/
-
-.column-main
-{
-	float: left;
-	width:85%;
+.item_date {
+    background: hsla(40,100%,50%,1);
 }
 
-.column-main .content
-{
-	padding-top: 0;
-	padding-left:0;
-	padding-right: 10px;
-	padding-bottom: 25px;
+#right-feed div {
+    background: hsla(40,100%,50%,1) !important;
 }
 
-.column-main .content img,
-.column-main .content .captioned_image
-{
-	padding: 0px;
-	margin: 0px;
+#right-feed a{
+display: block;
+    background: hsla(40,100%,50%,1);
+}
+#right-feed a:hover {
+background: hsla(35,100%,50%,1);
 }
 
-.column-main .content h1.page-header
-{
-	background-color: #FBAA02;
-	color: #222222;
-	text-align:center;
-	font-size:1.8em;
-	border-bottom-right-radius: 8px;
-	border-bottom-left-radius: 8px;
-	width: 100%;
-}
-
-
-/*-----Footer-----*/
-
-#footer
-{
-	background: #e7f6f8;
-}
-
-
-/*-----Blockquotes-----*/
-
-.column-main .content blockquote.styled
-{
-	padding-left:25px;
-	margin-left:15px;
-	margin-right:15px;
-	background: url(/en/image/5jPMwp/25/19/open-quotes-yellow.png) top left no-repeat;
-}
-
-.column-main .content blockquote.styled p
-{
-	padding: 0 25px 0 0;
-	font-family: Georgia, serif;
-	font-style: italic;
-	color: #383838;
-	background: url(/en/image/5jPN13/25/19/close-quote-yellow.png) bottom right no-repeat;
-}
-
-.column-main .content blockquote.styled cite
-{
-	font-size: 0.8em;
-	color:#888888;
-}
-
-
-/*-----Twitter-----*/
-
-.twitter-timeline
-{
-	margin-top:5px;
-}
-
-
-/*-----Images-----*/
-
-img.rounded
-{
-	border-radius: 10px;
-}
-
-/*Rounded edges for photos on main contacts page*/
-div.contact > img.content-edited
-{
-	border-radius: 10px;
-}
-
-/*Hover effect for image links*/
-a:hover img
-{
-	background-color:#00a4b5;
-	opacity:0.8;
-	filter:alpha(opacity=80); /* For IE8 and earlier */
-}
-
-/*Used to fix transparency problem with captioned images used as a link (caption becomes unreadable/too faint)*/
-div.captioned_image a:hover img
-{
-	opacity:1;
-	filter:alpha(opacity=100); /* For IE8 and earlier */
-}
-
-img.content-edited
-{
-	margin: 0px;
-}
-
-
-/*-----National News-----*/
-
-/*Used to style the national news box on news page*/
-.national-news
-{
-	width: 200px;
-	padding-bottom: 10px;
-	border: 1px solid #00a4b5;
-	border-radius:4px;
-	background-color:#e0fcff;
-}
-
-/*Used to set color of date area on national news feed*/
-.national-news div ul li
-{
-	background-color: #FECF70;
-	padding-bottom: 8px;
-}
-
-/*Used to set color of "read more" link on national news feed*/
-.national-news div ul li strong
-{
-	background-color:#e0fcff;
-}
-
-/*Used to set color of article title area on national news feed*/
-.national-news div ul li ul li
-{
-	background-color: #ffffff;
-}
-
-
-/*-----In Your Area Page-----*/
-
-td.in-your-area-contacts-photo
-{
-	padding-top:5px;
-	width:150px;
-	text-align:center;
-}
-
-td.in-your-area-contacts-name
-{
-	text-align:center;
-	width:150px;
-	font-size:0.8em;
-	font-weight:bold;
-}
-
-table.in-your-area-contacts
-{
-	border:1px solid #fbaa02;
-	border-radius:10px;
-	margin:3px;
-	width:415px;
-}
-
-table.in-your-area-ward
-{
-	margin-top:5px;
-	border:1px solid #fbaa02;
-	background-color:#ffffff;
-	border-radius:10px;
-}
-
-h3.in-your-area-ward-name
-{
-	text-align: center;
-}
-
-div.in-your-area-ward-more-info
-{
-	text-align: center;
-	font-weight:bold;
-}
-
-
-/*-----Image Slider-----*/
-
-/*Rounded corners on image sliders*/
-.cycle img.content-edited
-{
-	border-radius:10px;
-}
-
-/*Rounded bottom corners on image slider caption*/
-.cycle div.caption
-{
-	border-bottom-left-radius:10px;
-	border-bottom-right-radius:10px;
-}
-
-
-/*-----Poll Box-----*/
-
-div.poll-form
-{
-	padding:3px;
-	background-color:#ffe3ab;
-	border-radius:10px;
-	margin-bottom:10px;
-}
-
-/*Force poll items to stack in poll box*/
-.form .radio_list li, .column-main .content .form ul.radio_list li
-{
-	float:none;
-}
-
-
-/*-----Misc-----*/
-
-.orange-border
-{
-	padding:5px;
-	border:1px solid #fbaa02;
-	border-radius:10px;
-}
-
-.eu
-{
-	padding:5px;
-	border:1px solid #0c4da2;
-	background-color: #c2e2f1;
-	border-radius:10px;
-}
-
-h3
-{
-	margin-top: 10px;
-}
-
-
-/*-----Hidden Content-----/*
-
-/*Hide 'more' content on all pages*/
-div.more
-{
-	display:none;
-}
-
-/*Hides role on contacts pages*/
-p.roles
-{
-	display:none;
-}
-
-/*-----Lifestream-----*/
-
-/*---Lifestream BASE STYLE---*/
-
-/*BASE STYLE: Remove margin from top of lifestream*/
-.content .lifestream
-{
-	margin-top: 0px;
-}
-
-/*BASE STYLE: Add a 'Read full story' link at the top of article preview*/
-div.more a, ul.lifestream-full div.title a, .column-main .content div.lifestream div.more a, .column-main .content ul.lifestream-full div.title a:before
-{
-	content:"(Read Full Story \00BB) \A\A";
-	white-space:pre-line;
-}
-
-/*BASE STYLE: (Rotate Mode) Add shadow around displayed article preview on lifestream*/
-ul.lifestream-full.js, .column-main .content ul.lifestream-full.js
-{
-	box-shadow: 2px 2px 5px 2px #bbb;
-	border: 0px;
-	margin-bottom:5px;
-	text-align: left;
-}
-
-/*BASE STYLE: Style of article previews on lifestream*/
-.lifestream-full
-{
-	box-shadow: 2px 2px 5px 2px #bbb;
-	border: 0px;
-	margin-bottom:5px;
-	text-align: left;
-}
-
-/*BASE STYLE: Highlight displayed article on article list under lifestream*/
-estream-links .selected, .column-main .content ul.lifestream-links .selected
-{
-	background-color: #ffe3ab;
-	border-radius:8px;
-}
-
-/*BASE STYLE: Color of link text in article list under lifestream*/
-ul.lifestream-links .selected .title a, .column-main .content ul.lifestream-links .selected .title a
-{
-	color: #1d8f9b;
-}
-
-/*BASE STYLE: Hover color of link text in article list under lifestream*/
-ul.lifestream-links .selected .title a, .column-main .content ul.lifestream-links .selected .title a:hover
-{
-	color:#006b79;
-}
-
-/*BASE STYLE: Headline link style in article preview*/
-div.more a, ul.lifestream-full div.title a, .column-main .content div.lifestream div.more a, .column-main .content ul.lifestream-full div.title a
-{
-	color: #1d8f9b;
-	font-weight:bold;
-}
-
-/*BASE STYLE: Headline link hover style in article preview*/
-div.more a, ul.lifestream-full div.title a, .column-main .content div.lifestream div.more a, .column-main .content ul.lifestream-full div.title a:hover
-{
-	color:#006b79;
-}
-
-
-/*---Lifestream OLD HOMEPAGE STYLE---*/
-
-/*OLD HOMEPAGE STYLE: Hide 'older items' link on homepage life stream*/
-#home-featured-article .lifestream-pager
-{
-	display:none;
-}
-
-
-/*---Lifestream IN YOUR AREA STYLE---*/
-
-/*IN YOUR AREA STYLE: Hide 'older items' link on In Your Area life streams*/
-.in-your-area-ward-article-list .lifestream-pager
-{
-	display:none;
-}
-
-/*---Lifestream SPECIAL STYLE---*/
-
-/*SPECIAL STYLE: Hide 'older items' link on special life streams*/
-#special .lifestream-pager
-{
-	display:none;
-}
-
-.content ul li
-{
-margin: 6px 15px;
+#page-content{
+    overflow-wrap: break-word;
 }
