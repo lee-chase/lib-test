@@ -175,13 +175,13 @@ div#wrapper {
 
 @media screen and (max-device-width: 500px) {
   div#wrapper {
-    width: 100%;
+    width: calc(100% - 20px);
   }
 }
 
 @media screen and (max-width: 500px) {
   div#wrapper {
-    width: 100%;
+    width: calc(100% - 20px);
   }
 }
 
