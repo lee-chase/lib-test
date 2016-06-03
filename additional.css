@@ -186,6 +186,14 @@ div#wrapper {
   }
 }
 
+.home-hero {
+	display: flex;
+}
+
+.home-hero__contents {
+	width: 100%;
+}
+
 .home-hero .cycle {
 	float: right;
 	margin: 0 0 10px 10px;
