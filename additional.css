@@ -159,7 +159,7 @@ body {
 #email-bar .container input {
   height: 26px;
   margin: 0 20px 0 0;
-  max-width: 90%;
+  max-width: 80%;
   float: none;
   margin: 0 20px 0 0;
 }
@@ -171,8 +171,8 @@ body {
 
 div#wrapper {
   min-width: 320px;
+	width: 90%;
 }
-
 
 @media screen and (max-device-width: 500px) {
   div#wrapper {
