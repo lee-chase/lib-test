@@ -159,7 +159,7 @@ body {
 #email-bar .container input {
   height: 26px;
   margin: 0 20px 0 0;
-  max-width: 75%;
+  max-width: 90%;
   float: none;
   margin: 0 20px 0 0;
 }
@@ -173,6 +173,7 @@ div#wrapper {
   min-width: 320px;
 }
 
+
 @media screen and (max-device-width: 500px) {
   div#wrapper {
     width: calc(100% - 20px);
@@ -185,6 +186,75 @@ div#wrapper {
   }
 }
 
-.home-hero {
-  display: flex;
+.home-hero .cycle {
+	float: right;
+	margin: 0 0 10px 10px;
+	width: 400px;
+	max-width: 66%;
+	white-space: nowrap;
+}
+
+.captioned-image {
+	width: 400px;
+	max-width: 100%;
+	padding-bottom: 75%;
+	position: relative;
+	margin: 0;
+	display: inline-block;
+	text-align: center;
+}
+
+.captioned-image .content-edited {
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+}
+
+.captioned-image {
+	animation: round 16s infinite;
+	opacity: 0;
+}
+
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.captioned-image:nth-child(1) {
+	animation-delay: 12s;
+}
+
+.captioned-image:nth-child(2) {
+	left: -100%;
+	animation-delay: 8s;
+}
+
+.captioned-image:nth-child(3) {
+	left: -200%;
+	animation-delay: 4s;
+}
+
+.captioned-image:nth-child(4) {
+	left: -300%;
+	animation-delay: 0s;
+}
+
+.captioned-image .caption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	line-height: 40px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, .5);
+	font-size: 24px;
+	color: white;
 }
