@@ -12,7 +12,7 @@ a:hover{
 text-decoration: none;
 }
 
-.header-logo{
+.header-logo {
 width:15%;
 float:left;
 }
@@ -118,17 +118,68 @@ body {
 
 #banner {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+	overflow: visible;
 }
 
+@media screen and (max-device-width: 550px) {
+	#banner {
+		margin-bottom: 35px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	#banner {
+		margin-bottom: 35px;
+	}
+}
+
+
 .header-logo {
-  min-width: 120px;
+  overflow: visible;
+	flex: 2 2 20%;
+	position: relative;
+}
+
+.header-logo a {
+	background-image: url("http://sb3.lib.dm/logo/2014/blank/transparent/yellow/black/100.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	overflow: visble;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.header-logo a:after {
+	content: 'Liberal Democrats';
+	position: absolute;
+	bottom: -32px;
+	font-size: 28px;
+	overflow: visible;
+	margin-left: 20px;
+	white-space: nowrap;
+}
+
+@media screen and (min-device-width: 550px and max-device-width: 650px) {
+	.header-logo a:after {
+		white-space: normal
+	}
+}
+
+@media screen and (min-width: 550px) and (max-width: 650px) {
+	.header-logo a:after {
+		white-space: normal
+	}
+}
+
+.header-logo a img {
+	display: none;
 }
 
 .header-image {
-  min-width: 80%;
   margin: 10px 0;
+	flex: 1 1 80%;
 }
 
 .header-right {
@@ -153,7 +204,8 @@ body {
 
 #email-bar .container #search-form div {
   display: flex;
-  justify-content: flex-right;
+  justify-content: flex-end;
+	right: 0;
 }
 
 #email-bar .container input {
@@ -265,4 +317,9 @@ div#wrapper {
 	background-color: rgba(0, 0, 0, .5);
 	font-size: 24px;
 	color: white;
+}
+
+.menu__ {
+	font-size: 32px;
+	font-weight: bold;
 }
