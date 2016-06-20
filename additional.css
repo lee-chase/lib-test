@@ -366,8 +366,7 @@ div.lifestream-fixed div.lifestream ul.lifestream-full li.lifestream {
 	padding-right: 145px;
 }
 
-#lifestream-theme-three .lifestream .lifestream .lifestream {
-  max-height: 325px;
-  max-width: 325px;
-	
+#wrapper #lifestream-theme-three .lifestream .lifestream .lifestream {
+  height: 325px;
+  width: 325px;
 }
