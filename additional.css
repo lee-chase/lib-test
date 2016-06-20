@@ -376,10 +376,10 @@ div.lifestream-fixed div.lifestream ul.lifestream-full li.lifestream {
   width: calc(50% - 10px);
 }
 
-#lifestream-theme-three {
+#wrapper #lifestream-theme-three {
   width: 90vw;
 }
 
-#lifestream-theme-three .lifestream {
+#wrapper #lifestream-theme-three .lifestream {
   width: 100%;
 }
