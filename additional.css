@@ -365,3 +365,9 @@ div.lifestream-fixed div.lifestream ul.lifestream-full li.lifestream {
 .container .column-main .content .lifestream-content {
 	padding-right: 145px;
 }
+
+#lifestream-theme-three .lifestream .lifestream .lifestream {
+  height: 325px;
+  width: 325px;
+	
+}
