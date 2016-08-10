@@ -361,3 +361,21 @@ div.lifestream-fixed div.lifestream ul.lifestream-full li.lifestream {
 .container .column-main .content .lifestream-content {
 	padding-right: 145px;
 }
+
+#wrapper #lifestream-theme-three .lifestream .lifestream-full .lifestream {
+  height: 160px;
+  width: calc(25% - 10px);
+}
+#wrapper #lifestream-theme-three .lifestream .lifestream-full :nth-child(1),
+#wrapper #lifestream-theme-three .lifestream .lifestream-full :nth-child(8) {
+  height: 325px;
+  width: calc(50% - 10px);
+}
+
+#wrapper #lifestream-theme-three {
+  width: 90vw;
+}
+
+#wrapper #lifestream-theme-three .lifestream {
+  width: 100%;
+}
